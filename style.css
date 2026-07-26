@@ -1,0 +1,277 @@
+/* ==========================
+   FOOD RESCUE NETWORK
+   STYLE.CSS
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f5f5;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Navigation */
+
+.navbar{
+    position:sticky;
+    top:0;
+    background:#2E7D32;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    z-index:1000;
+}
+
+.logo{
+    color:white;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:20px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#F57C00;
+}
+
+/* Hero */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px 8%;
+    gap:40px;
+    flex-wrap:wrap;
+    background:white;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:48px;
+    color:#2E7D32;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    margin-bottom:25px;
+}
+
+.hero-image{
+    flex:1;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+/* Buttons */
+
+.btn{
+    display:inline-block;
+    background:#F57C00;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:8px;
+    margin-right:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#e46d00;
+}
+
+.secondary{
+    background:#2E7D32;
+}
+
+/* Sections */
+
+section{
+    padding:70px 8%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#2E7D32;
+    font-size:34px;
+}
+
+/* Cards */
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+    width:250px;
+    text-align:center;
+}
+
+.card h3{
+    color:#F57C00;
+    margin-bottom:10px;
+}
+
+/* Impact */
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    text-align:center;
+}
+
+.stats h3{
+    color:#F57C00;
+    font-size:40px;
+}
+
+.stats p{
+    font-weight:500;
+}
+
+/* Volunteer */
+
+.volunteer{
+    text-align:center;
+    background:#ffffff;
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+/* Footer */
+
+footer{
+    background:#2E7D32;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+}
+
+.nav-links{
+    flex-direction:column;
+    margin-top:15px;
+}
+
+.nav-links li{
+    margin:10px 0;
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:34px;
+}
+
+.cards{
+    flex-direction:column;
+    align-items:center;
+}
+
+.stats{
+    flex-direction:column;
+    gap:25px;
+}
+
+.btn{
+    display:block;
+    margin:10px auto;
+}
+}
+footer a{
+    color:white;
+    text-decoration:none;
+    margin:0 5px;
+}
+
+footer a:hover{
+    color:#F57C00;
+}
+/* Image Sections */
+
+.about-content{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    margin-top:30px;
+}
+
+.about-content img{
+    width:45%;
+    border-radius:15px;
+}
+
+.process img{
+    display:block;
+    width:70%;
+    margin:20px auto;
+    border-radius:15px;
+}
+
+.impact img{
+    display:block;
+    width:60%;
+    margin:20px auto;
+    border-radius:15px;
+}
+
+.volunteer img{
+    display:block;
+    width:50%;
+    margin:20px auto;
+    border-radius:15px;
+}
