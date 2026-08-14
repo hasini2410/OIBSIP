@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasini Raparthi — B.Com (IT) & Python Developer Portfolio</title>
+    <meta name="description" content="Personal portfolio of Hasini Raparthi, B.Com IT student at St. Joseph's Degree & PG College, Hyderabad. Proficient in Python, MS Office, and IT Applications.">
+    
+    <!-- Google Fonts: Inter & Fira Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Chart.js for Data Visualizations -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- AMBIENT PARTICLES CANVAS -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="#hero" class="brand">
+                <span class="brand-initials">HR</span>
+                <span class="brand-name">Hasini Raparthi</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-item active">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#analytics-demo" class="nav-item">Analytics Demo</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="sound-toggle-btn" id="sound-toggle-btn" title="Toggle Audio FX" aria-label="Toggle Sound">
+                    <i class="fa-solid fa-volume-high"></i>
+                </button>
+                <a href="mailto:raparthihasini@gmail.com" class="btn btn-sm btn-primary">
+                    <i class="fa-solid fa-paper-plane"></i> <span>Hire Me</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- BENTO GRID SECTION -->
+        <section id="hero" class="bento-section">
+            <div class="bento-container">
+                
+                <!-- BENTO BLOCK 1: MAIN HERO PROFILE (Spans 8 cols) -->
+                <div class="bento-card bento-hero reveal" data-tilt-card>
+                    <div class="bento-hero-header">
+                        <div class="profile-avatar-frame dev-avatar-box">
+                            <span class="dev-initials">HR</span>
+                            <i class="fa-brands fa-python python-watermark"></i>
+                        </div>
+                        <div class="profile-titles">
+                            <span class="badge-status"><i class="fa-solid fa-graduation-cap"></i> St. Joseph's Degree & PG College</span>
+                            <h1 class="hero-name">Hasini Raparthi</h1>
+                            <p class="hero-role">
+                                <span id="typing-text">B.Com (IT) Specialist</span><span class="typing-cursor">|</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="hero-bio-text">
+                        "Currently pursuing a B.Com in Information Technology, I am a proactive learner proficient in <strong>Python</strong> and <strong>MS Office</strong>, seeking an internship to apply my technical and analytical skills in a professional environment."
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span> <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fa-solid fa-envelope"></i> <span>Contact Hasini</span>
+                        </a>
+                        <button class="btn btn-ghost" id="copy-email-hero-btn">
+                            <i class="fa-solid fa-copy"></i> <span id="copy-text-span">Copy Email</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BENTO BLOCK 2: STATUS & LOCATION (Spans 4 cols) -->
+                <div class="bento-card bento-status reveal reveal-delay-1" data-tilt-card>
+                    <div class="card-tag"><i class="fa-solid fa-circle-dot color-emerald"></i> AVAILABILITY</div>
+                    <h3 class="card-title">#OPENTOWORK</h3>
+                    <p class="card-subtext">Actively seeking entry-level IT roles and internships.</p>
+
+                    <div class="info-list">
+                        <div class="info-row">
+                            <span class="info-label"><i class="fa-solid fa-location-dot"></i> Location</span>
+                            <span class="info-val">Hyderabad, Telangana, India</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label"><i class="fa-solid fa-briefcase"></i> Mode</span>
+                            <span class="info-val">On-site · Hybrid</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label"><i class="fa-solid fa-graduation-cap"></i> Field</span>
+                            <span class="info-val">B.Com (Information Tech)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BENTO BLOCK 3: ABOUT ME DETAILS (Spans 5 cols) -->
+                <div class="bento-card bento-about reveal reveal-delay-2" data-tilt-card id="about">
+                    <div class="card-tag"><i class="fa-solid fa-user"></i> ABOUT ME</div>
+                    <h2 class="card-title">Background & Objective</h2>
+                    <p class="card-paragraph">
+                        B.Com (IT) student at <strong>St. Joseph's Degree & PG College</strong> with a focus on Python programming and IT applications. I combine a quick-learning mindset with strong foundational skills in MS Office and computer fundamentals. Highly motivated to transition academic knowledge into a professional setting.
+                    </p>
+
+                    <div class="traits-chips">
+                        <span class="chip"><i class="fa-brands fa-python"></i> Python Scripting</span>
+                        <span class="chip"><i class="fa-solid fa-file-excel"></i> MS Office Suite</span>
+                        <span class="chip"><i class="fa-solid fa-chart-line"></i> Data Analysis</span>
+                        <span class="chip"><i class="fa-solid fa-database"></i> IT Applications</span>
+                    </div>
+                </div>
+
+                <!-- BENTO BLOCK 4: LIVE PYTHON SCRIPT PREVIEW (Spans 7 cols) -->
+                <div class="bento-card bento-code reveal reveal-delay-3" data-tilt-card>
+                    <div class="code-window-header">
+                        <div class="window-buttons">
+                            <span class="w-btn close"></span>
+                            <span class="w-btn minimize"></span>
+                            <span class="w-btn expand"></span>
+                        </div>
+                        <span class="code-filename"><i class="fa-brands fa-python"></i> candidate_profile.py</span>
+                        <button class="btn-run-code" id="run-demo-btn"><i class="fa-solid fa-play"></i> Run Code</button>
+                    </div>
+
+                    <div class="code-editor-body">
+                        <pre><code><span class="k">class</span> <span class="c">Candidate</span>:
+    <span class="k">def</span> <span class="f">__init__</span>(self):
+        self.name = <span class="s">"Hasini Raparthi"</span>
+        self.education = <span class="s">"B.Com (IT) @ St. Joseph's"</span>
+        self.tech_stack = [<span class="s">"Python"</span>, <span class="s">"MS Excel"</span>, <span class="s">"Data Analytics"</span>]
+        self.location = <span class="s">"Hyderabad, India"</span>
+
+    <span class="k">def</span> <span class="f">evaluate</span>(self):
+        <span class="k">return</span> <span class="s">"Ready for entry-level IT roles & internships!"</span>
+
+hasini = Candidate()
+print(hasini.evaluate())</code></pre>
+                    </div>
+                    <div class="code-output-bar" id="code-output-bar">
+                        <span class="out-label">> Output:</span> <span class="out-text">Click "Run Code" above to execute...</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- LIVE DATA ANALYTICS VISUALIZER DEMO SECTION -->
+        <section id="analytics-demo" class="section-container">
+            <div class="analytics-bento-card reveal" data-tilt-card>
+                <div class="analytics-card-header">
+                    <div>
+                        <span class="section-badge"><i class="fa-solid fa-chart-pie color-emerald"></i> Live Interactive Demo</span>
+                        <h2 class="section-title">Data Analytics & Chart Visualizer</h2>
+                        <p class="section-desc">Interactive chart demonstration showcasing Python data manipulation and analytical reporting capabilities.</p>
+                    </div>
+                    
+                    <div class="dataset-switcher">
+                        <button class="ds-btn active" data-dataset="sales"><i class="fa-solid fa-chart-line"></i> Business Sales</button>
+                        <button class="ds-btn" data-dataset="python"><i class="fa-brands fa-python"></i> Python Performance</button>
+                        <button class="ds-btn" data-dataset="skills"><i class="fa-solid fa-layer-group"></i> Skill Matrix</button>
+                    </div>
+                </div>
+
+                <div class="chart-wrapper">
+                    <canvas id="analyticsChart"></canvas>
+                </div>
+
+                <div class="analytics-metrics-bar">
+                    <div class="a-metric">
+                        <span class="a-val count-up" data-target="12450">0</span><span class="metric-plus">+</span>
+                        <span class="a-lbl">Records Processed</span>
+                    </div>
+                    <div class="a-metric">
+                        <span class="a-val">0.04s</span>
+                        <span class="a-lbl">Execution Speed</span>
+                    </div>
+                    <div class="a-metric">
+                        <span class="a-val count-up" data-target="99.8" data-decimal="1">0</span><span class="metric-plus">%</span>
+                        <span class="a-lbl">Data Accuracy</span>
+                    </div>
+                    <div class="a-metric">
+                        <span class="a-val">Python & Pandas</span>
+                        <span class="a-lbl">Engine Stack</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section-container">
+            <div class="section-heading reveal">
+                <span class="section-badge">Capabilities</span>
+                <h2 class="section-title">Technical Skills & Tools</h2>
+                <p class="section-desc">Practical proficiency across programming, office productivity, and IT fundamentals.</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill 1 -->
+                <div class="skill-tile reveal reveal-delay-1" data-tilt-card>
+                    <div class="skill-icon python-color"><i class="fa-brands fa-python"></i></div>
+                    <div class="skill-content">
+                        <h3 class="skill-title">Python Programming</h3>
+                        <p class="skill-text">Data processing, scripting, logic automation, and Pandas data structures.</p>
+                        <div class="skill-tags">
+                            <span class="s-tag">Scripting</span>
+                            <span class="s-tag">Pandas</span>
+                            <span class="s-tag">Data Cleaning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="skill-tile reveal reveal-delay-2" data-tilt-card>
+                    <div class="skill-icon excel-color"><i class="fa-solid fa-file-excel"></i></div>
+                    <div class="skill-content">
+                        <h3 class="skill-title">MS Office Suite</h3>
+                        <p class="skill-text">Advanced Excel (VLOOKUP, Pivot Tables, Formulas), Word, and PowerPoint presentation design.</p>
+                        <div class="skill-tags">
+                            <span class="s-tag">MS Excel</span>
+                            <span class="s-tag">Pivot Tables</span>
+                            <span class="s-tag">PowerPoint</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="skill-tile reveal reveal-delay-3" data-tilt-card>
+                    <div class="skill-icon analytics-color"><i class="fa-solid fa-chart-pie"></i></div>
+                    <div class="skill-content">
+                        <h3 class="skill-title">IT & Data Analytics</h3>
+                        <p class="skill-text">Business data interpretation, quantitative analysis, and reporting fundamentals.</p>
+                        <div class="skill-tags">
+                            <span class="s-tag">Analytics</span>
+                            <span class="s-tag">Business IT</span>
+                            <span class="s-tag">Reporting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="skill-tile reveal reveal-delay-1" data-tilt-card>
+                    <div class="skill-icon db-color"><i class="fa-solid fa-database"></i></div>
+                    <div class="skill-content">
+                        <h3 class="skill-title">SQL & Database Basics</h3>
+                        <p class="skill-text">Relational database concepts, SQL queries, table structures, and data retrieval.</p>
+                        <div class="skill-tags">
+                            <span class="s-tag">SQL</span>
+                            <span class="s-tag">RDBMS</span>
+                            <span class="s-tag">Queries</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 5 -->
+                <div class="skill-tile reveal reveal-delay-2" data-tilt-card>
+                    <div class="skill-icon web-color"><i class="fa-brands fa-html5"></i></div>
+                    <div class="skill-content">
+                        <h3 class="skill-title">Web Technologies</h3>
+                        <p class="skill-text">HTML5 structure, CSS3 layout styling, responsive design principles, and basic JavaScript.</p>
+                        <div class="skill-tags">
+                            <span class="s-tag">HTML5</span>
+                            <span class="s-tag">CSS3</span>
+                            <span class="s-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 6 -->
+                <div class="skill-tile reveal reveal-delay-3" data-tilt-card>
+                    <div class="skill-icon soft-color"><i class="fa-solid fa-brain"></i></div>
+                    <div class="skill-content">
+                        <h3 class="skill-title">Analytical Mindset</h3>
+                        <p class="skill-text">Proactive problem-solving agility, team communication, and fast adaptability to technical tools.</p>
+                        <div class="skill-tags">
+                            <span class="s-tag">Problem Solving</span>
+                            <span class="s-tag">Adaptability</span>
+                            <span class="s-tag">Teamwork</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section-container">
+            <div class="section-heading reveal">
+                <span class="section-badge">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-desc">Practical applications demonstrating Python scripting, data automation, and web development.</p>
+            </div>
+
+            <div class="projects-list">
+                <!-- Project 1 -->
+                <article class="project-item reveal" data-tilt-card>
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span class="project-tag">Python & Analytics</span>
+                        </div>
+                        <h3 class="project-name">Python Data Analysis & Automated Reporting Engine</h3>
+                        <p class="project-summary">
+                            A Python automation script designed to process raw Excel/CSV business records, execute data cleaning and missing value handling, compute statistical summaries, and generate visual metric reports.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="p-tech"><i class="fa-brands fa-python"></i> Python</span>
+                            <span class="p-tech"><i class="fa-solid fa-table"></i> Pandas</span>
+                            <span class="p-tech"><i class="fa-solid fa-chart-column"></i> Matplotlib</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/hasiniraparthi/python-data-engine" target="_blank" rel="noopener" class="btn btn-sm btn-secondary">
+                                <i class="fa-brands fa-github"></i> GitHub Repository
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-preview">
+                        <img src="assets/project_python_analytics.jpg" alt="Python Data Engine" class="preview-image">
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-item reveal" data-tilt-card>
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span class="project-tag">MS Office & Automation</span>
+                        </div>
+                        <h3 class="project-name">Finalytics MS Excel Financial Reporting Suite</h3>
+                        <p class="project-summary">
+                            Automated financial reporting dashboard utilizing advanced Excel formulas (VLOOKUP, Pivot Tables), dynamic chart consolidation, and macro logic for streamlined business data visualization.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="p-tech"><i class="fa-solid fa-file-excel"></i> MS Excel</span>
+                            <span class="p-tech"><i class="fa-solid fa-chart-line"></i> Pivot Modeling</span>
+                            <span class="p-tech"><i class="fa-solid fa-gears"></i> Office Automation</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/hasiniraparthi/excel-office-automation" target="_blank" rel="noopener" class="btn btn-sm btn-secondary">
+                                <i class="fa-brands fa-github"></i> GitHub Repository
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-preview">
+                        <img src="assets/project_office_automation.jpg" alt="MS Office Financial Suite" class="preview-image">
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-item reveal" data-tilt-card>
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span class="project-tag">Web Development</span>
+                        </div>
+                        <h3 class="project-name">Personal Digital Résumé & Bento Grid Web App</h3>
+                        <p class="project-summary">
+                            A clean, modern, responsive personal portfolio web application built with HTML5, CSS3, and JavaScript featuring a modular Bento Grid layout, interactive code previewer, and seamless email copy utilities.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="p-tech"><i class="fa-brands fa-html5"></i> HTML5</span>
+                            <span class="p-tech"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                            <span class="p-tech"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/hasiniraparthi/portfolio-web-app" target="_blank" rel="noopener" class="btn btn-sm btn-secondary">
+                                <i class="fa-brands fa-github"></i> GitHub Repository
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-preview">
+                        <img src="assets/project_portfolio_webapp.jpg" alt="Digital Resume Web Portfolio" class="preview-image">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section-container">
+            <div class="contact-card reveal" data-tilt-card>
+                <div class="contact-header">
+                    <span class="section-badge">Get In Touch</span>
+                    <h2 class="contact-title">Let's Connect & Work Together</h2>
+                    <p class="contact-desc">Interested in offering an internship or entry-level IT role in Hyderabad? Send a message directly or connect via LinkedIn.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope c-icon"></i>
+                            <div>
+                                <span class="c-label">Email Address</span>
+                                <a href="mailto:raparthihasini@gmail.com" class="c-link">raparthihasini@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone c-icon"></i>
+                            <div>
+                                <span class="c-label">Phone Number</span>
+                                <a href="tel:+917893213588" class="c-link">+91 7893213588</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot c-icon"></i>
+                            <div>
+                                <span class="c-label">Location</span>
+                                <span class="c-val">Hyderabad, Telangana, India</span>
+                            </div>
+                        </div>
+
+                        <div class="social-bar">
+                            <a href="https://linkedin.com/in/hasini-raparthi" target="_blank" rel="noopener" class="s-link" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/hasiniraparthi" target="_blank" rel="noopener" class="s-link" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                            <a href="https://wa.me/917893213588" target="_blank" rel="noopener" class="s-link" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" required placeholder="e.g. Priyanshu Sharma">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" required placeholder="e.g. priyanshu@company.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" required placeholder="Internship Inquiry / Role Discussion">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" required placeholder="Hello Hasini, we would love to invite you for an interview..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                            <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 <strong>Hasini Raparthi</strong>. B.Com (IT) Student | St. Joseph's Degree & PG College, Hyderabad.</p>
+            <div class="footer-links">
+                <a href="#hero">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING BACK TO TOP BUTTON -->
+    <button class="floating-top-btn" id="floating-top-btn" aria-label="Back to Top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast-notify" id="toast-notify">
+        <i class="fa-solid fa-circle-check"></i>
+        <span>Message sent successfully! Hasini will reach back out soon.</span>
+    </div>
+
+    <!-- CUSTOM SCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
