@@ -20,6 +20,13 @@ Welcome to the official repository for **Hasini Raparthi**'s Web Development Int
 
 ---
 
+### 3. Level 1 — Task 3: Temperature Converter Web Application
+- 📁 **Task Directory**: [`WebDev-L1-TemperatureConverter/`](./WebDev-L1-TemperatureConverter/)
+- 🌐 **Live Website Link**: [View Temperature Converter](https://hasini2410.github.io/OIBSIP/WebDev-L1-TemperatureConverter/)
+- 📝 **Summary**: A sleek, responsive temperature converter supporting real-time conversions between Celsius, Fahrenheit, and Kelvin with input validation.
+
+---
+
 ## 💻 Tech Stack & Tools
 
 - **Core**: HTML5, CSS3, JavaScript (ES6+)
